@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="shortcut icon" type="x-icon" href="imgs/lakbay3.png">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            background-color: #070707;
+            color: #fff;
+            padding: 0px;
+            text-align: center;
+            animation: fadeInDown 1s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            background-color: #555;
+            padding: 10px;
+            text-align: center;
+            animation: fadeInUp 1s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: #ddd;
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: color 0.3s ease, background-color 0.3s ease;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            color: #fff;
+            background-color: #777;
+        }
+
+        main {
+            padding: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        article {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 1s ease;
+        }
+
+        article h2 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        article img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        article p {
+            line-height: 1.6;
+            color: #555;
+        }
+
+        footer {
+            background-color: #080808;
+            color: #ddd;
+            padding: 20px;
+            text-align: center;
+            animation: fadeInUp 1s ease;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        @keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            max-width: 80%;
+            max-height: 80%;
+        }
+
+        .modal-img {
+            display: block;
+            max-width: 100%;
+            max-height: 100%;
+            margin: auto;
+        }
+
+        .close {
+            color: #fff;
+            position: absolute;
+            top: 10px;
+            right: 25px;
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <header>
+
+        <a class="navbar-brand" href="index.html">
+            <img src="/imgs/logoLM.png" alt="Bootstrap" width="150" height="150">
+        </a>
+
+    </header> -->
+
+    <nav>
+        <a href="/index.php"><i class="fas fa-home"></i> Home</a>
+
+
+    </nav>
+
+    <main>
+        <article>
+            <div class="divimg">
+                <img src="https://thehappytrip.com/wp-content/uploads/2017/02/LAKE-SEBU-2-768x970.jpg"
+                    alt="Divine Mercy">
+            </div>
+
+            <h2>The Beauty of Lake Sebu's Seven Falls</h2>
+            <p>Lake Sebu boasts a natural wonder that leaves visitors awestruck - the Seven Falls. This cascading series
+                of waterfalls unveils a breathtaking display of nature's majesty, intertwined with thrilling adventure
+                opportunities.</p>
+            <p>For the adrenaline junkie, Lake Sebu offers the crown jewel - the highest zipline in Southeast Asia. Soar
+                through the lush greenery, gazing upon the cascading waterfalls from a thrilling perspective. The cool
+                mist and breathtaking panorama will leave you breathless.
+            </p>
+            <div class="divimg">
+                <img src="https://www.wonderingwanderer.com/wp-content/uploads/2013/08/Lake-Sebu-7-Falls-River.jpg"
+                    alt="">
+            </div>
+            <h2>The Seven Waterfalls
+            </h2>
+            
+            <div class="divimg">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh6aN8VLstnuC1kmm_x1gpbeHbURlAXXcuei-wX8vGJrTww4TX67T3L3wC1HMuKua35wCkgUqSfZFc2aclj0_t1alvkOk3f71loixzJwumZkmxCoeRLFRfv_7yCCXJGOQjhyphenhyphenYjG4BTHQII/s1600/4TH+SEVEN+FALLS.jpg"
+                    alt="">
+            </div>
+            <p>
+                Hikong Bente – The tallest waterfall in the series, with a height of around 70 meters. It is named after the T’boli word for “twenty,” as the waterfall has 20 levels or tiers.
+            </p>
+            
+            <div class="divimg">
+                <img src="https://i0.wp.com/riley.ph/wp-content/uploads/2018/07/south-cotabato-lake-sebu-hikong-alo-1-5.jpg?resize=1140%2C778&ssl=1"
+                    alt="">
+            </div>
+            <p>
+                Hikong Alo – This waterfall is known for its excellent, refreshing pool at the bottom, perfect for swimming and picnics. The name “alo” means “deep” in T’boli.
+            </p>
+            <div class="divimg">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqPhY4SpaCERqS8vo-dzIg011CZC-92qePOa8j29odfJk2M1FOsbaK4jVur_RuhP5rfcAa7m22yQc8Pl3iphIgRS0Ld9tkOtEry2sDVVbtqJAs9dMOV-vUqULncQrmX6ffiVtLg7zn0WnR/s1600/lake+sebu+7+falls+2+%25283%2529.JPG"
+                    alt="">
+            </div>
+            <p class="lk">
+                Hikong Ukol – A smaller waterfall with a unique feature: a natural sauna created by the steam from the falling water. Visitors can sit on the rocks and enjoy the warm mist.
+            </p>
+            <div class="divimg">
+                <img src="http://tarakahitsaan.com/images/spots/kili-falls.jpg"
+                    alt="">
+            </div>
+            <p>Kili Falls – This waterfall is named after the T’boli word for “three,” as it has three tiers. It is a popular spot for cliff diving and rappelling.</p>
+            <div class="divimg">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg87-ZF2YdN1Ugs-ayYnQqsUtksHuwvyY3Tl-Fc-tYIsdj1Ld75UFXQiws2heQMXZMpSYn8dxql5s3q5qjqo3qI3Z93UXW1MNQ-0nCBZIDgkOHAC8i7ba1whakTS0IWnt7zFJm27y4c7Flz/s640/LAKE+SEBU+7+FALLS+%25286%2529.JPG" alt="">
+            </div>
+            <p>
+                Hikong K’foi – The most picturesque waterfall in the series, with a small cave behind the cascading water. It is said to be the home of the T’boli goddess, Fiuwe.
+            </p>
+            <div class="divimg">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQhHTZbljZnXM10JCN6poDL_akJEvvA_xKzWTaJB58sybpBzzHEre2dYB-9U-VU5_JARlbkWKQFELgK_tQSUN1Kdt6_TIFuYP17LdmEMM6HCekHHXL02_YjQu5SBFIHtb3Lfm73yq7Qx2q/s640/LAKE+SEBU+7+FALLS+%25287%2529.JPG" alt="" style="width: 50%; height: auto;">
+            </div>
+            <p>
+                Hikong Tonok – The steepest and most challenging waterfall to climb. It requires a steep and slippery hike, but the view from the top is worth it.
+            </p>
+            <div class="divimg">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgr-9SFmzdoSvoe8O-JLLnuKpwmA0-RIKWlQfp0WkkepNSlezj74yKVJ9euzCe3CKN7mR1dzh_6Uvx-ODXyVI8rIhQX6L0sIhb1QVy48EWbMX9ynty45RXdr0KG5MOeWqidAmHdTaWr4uom/s640/LAKE+SEBU+7+FALLS+%25284%2529.JPG" alt="" style="width: 80%; height: auto;">
+            </div>
+            <p>
+                Hikong Lowig – The most miniature waterfall in the series but also the most secluded. It is in a lush forest and can only be reached by trekking through a dense jungle.
+            </p>
+            <h2>Map Guide for Lake Sebu 7 Falls Tourist Destination</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.051196216556!2d124.71271151477593!3d6.219454195480305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32d9f01aa8a35ef5%3A0x9a4056da9ab73a0!2sLake%20Sebu%20Seven%20Falls!5e0!3m2!1sen!2sph!4v1620759332060!5m2!1sen!2sph" 
+width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+        </article>
+    </main>
+    <div class="modal" id="myModal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <div id="caption" class="caption"></div>
+    </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.querySelectorAll('.divimg img');
+        var modalImg = document.getElementById("modalImg");
+        var captionText = document.getElementById("caption");
+        img.forEach(function (imgElement) {
+            imgElement.onclick = function () {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.nextElementSibling.innerHTML;
+            }
+        });
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+    </script>
+    <footer>
+        <p>&copy; 2024 Lakbay Marsita. All rights reserved.</p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/your-kit-id.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2px; 
+  align-items: flex-start;
+
+}
+
+.gallery img {
+  margin: 5px; 
+  max-height: 300px; 
+  transition: transform 0.3s ease; 
+}
+
+.gallery img:hover {
+  transform: scale(1.1); 
+}

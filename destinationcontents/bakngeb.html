@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="shortcut icon" type="x-icon" href="imgs/lakbay3.png">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            background-color: #070707;
+            color: #fff;
+            padding: 0px;
+            text-align: center;
+            animation: fadeInDown 1s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            background-color: #555;
+            padding: 10px;
+            text-align: center;
+            animation: fadeInUp 1s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: #ddd;
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: color 0.3s ease, background-color 0.3s ease;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            color: #fff;
+            background-color: #777;
+        }
+
+        main {
+            padding: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        article {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 1s ease;
+        }
+
+        article h2 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        article img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        article p {
+            line-height: 1.6;
+            color: #555;
+        }
+
+        footer {
+            background-color: #080808;
+            color: #ddd;
+            padding: 20px;
+            text-align: center;
+            animation: fadeInUp 1s ease;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        @keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            max-width: 80%;
+            max-height: 80%;
+        }
+
+        .modal-img {
+            display: block;
+            max-width: 100%;
+            max-height: 100%;
+            margin: auto;
+        }
+
+        .close {
+            color: #fff;
+            position: absolute;
+            top: 10px;
+            right: 25px;
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <header>
+
+        <a class="navbar-brand" href="index.html">
+            <img src="/imgs/logoLM.png" alt="Bootstrap" width="150" height="150">
+        </a>
+
+    </header> -->
+
+    <nav>
+        <a href="/index.php"><i class="fas fa-home"></i> Home</a>
+
+
+    </nav>
+
+    <main>
+        <article>
+            <div class="divimg">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjp8OYAkIzVT_LkinsqqKahcXYOjTX0sl_vvZkBv9_8a83iSDw4cTwQPg6XfSgVSbjRBMCcIL0m6_Aebgbt0CU1k98TnmhamSk0J8f3PrUfEZ6aQRHx-WtKztMdfq4ps1WVXHQX0vt-1k3b/s1600/bakngeb002.jpg"
+                    alt="">
+            </div>
+
+            <h2>Bakngeb River Cave Adventure
+
+            </h2>
+            <p>Bakngeb River Cave is the attraction in the Municipality of Tboli in South Cotabato. Located in Brgy.
+                Laconon, Bakngeb features a wide river pool where tourists can enjoy swimming with its crystal clear and
+                cold waters. Visitors can also explore what's inside the river cave by riding a raft or go water tubing
+            </p>
+
+            <h2>Unveiling the Underground
+
+            </h2>
+
+            <div class="divimg">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYR2zZJzrhQQZwmvBeEu2rN4Qy7813MwQu_T2OTGz8jTfMYnOAaukaszjNYlZff3Q3xJWiQ2PmBkz2r4gkScuHf6pw49MaEN3IbnGjDWt8v0nBwXkpNwMr6MrYCHJpULjJ7hCbJEs2iLKe/s640/bakngeb008.jpg"
+                    alt="">
+            </div>
+
+            <h5>Crystal-Clear Waters: A wide river pool greets visitors at the cave's entrance, inviting you for a
+                refreshing swim in the cool, naturally filtered water.</h5>
+            <h5>Subterranean Beauty: As you venture deeper, marvel at the intricate rock formations sculpted by time and
+                water. Spot hidden chambers, glistening stalactites, and majestic stalagmites.
+            </h5>
+            <h5>Thrilling Exploration: Choose your mode of exploration! Glide through the cave on a bamboo raft or opt
+                for an exciting experience with water tubing.
+            </h5>
+            <p>Bakngeb River Cave features a wide river pool in its outlet, has naturally cold and crystal clear waters
+                which came from an underground cave system and natural rock formations. The river cave is also home to
+                bats.</p>
+            <div class="divimg">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifEXj-9nRtg3ExtG8yDWzVZGsLfXvO8dNKGw_YTJFhfr2Lrjj_E1MYbxUEWPwdgB9setLfrvIS_wFONui-wRzzbFOkcQjAml9yBJiDiL1g7S3dsbQVMcse3n7wBr-r5siLp-IdtZ340us/s640/DSC_7795.jpg"
+                    alt="">
+            </div>
+
+            <h2></h2>
+            <h2>How to get there</h2>
+            <h3>Bakngeb River Cave is situated in Sitio Bakngeb, Brgy. Laconon, Tboli, South Cotabato. The place can be
+                reached through all types of land transport.</h3>
+
+            <p>If you are coming from General Santos City, take a bus enroute to Koronadal City. ( Travel Time: 1 hour -
+                1 hour 30 minutes, Fare: P90- P110)</p>
+
+            <p>Then at the bus terminal in Koronadal, take a bus bound for Surallah. (Travel time: 30 minutes, Fare:
+                P28- P35)</p>
+
+            <p>At Surallah Integrated Transport Terminal, look for vans bound for Tboli. (Travel time: 30 minutes, Fare
+                at P30-40)
+            </p>
+            <p>In Tboli, proceed to the Municipal Hall and register at the tourism office. After that, look for a
+                habal-habal (motorcycle) to bring you to Bakngeb. (Travel time: 30 minutes, Fare: P40- P50 per person)
+            </p>
+            <div class="divimg">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhaTOqdecvz7WpMm-9pTQACajvrt9YbvSKLRUV6KCSojVDv2rpB8yJn4YDyvP5xYGVKayAuxmq7K5kvyE3mMRekwzvqynnqNJXpPQAlrh-mSelXi4SdqxUFWy-ncyhyphenhyphenzCYwyC0M5sGtpuSl/s640/bakngeb004.jpg"
+                    alt="">
+            </div>
+
+            <h2>Where to Stay
+            </h2>
+
+            <p>Tourists who wants to stay overnight in Sitio Bakngeb can bring their own tents and go camping by the
+                riverside or stay at the newly constructed Bakngeb River Cave Receiving Center for only P150 per person,
+                there guests can request for native foods and experience Tboli culture.</p>
+            <div class="divimg">
+                <img src="" alt="" style="width: 50%; height: auto;">
+            </div>
+            <p>
+
+            </p>
+            <div class="divimg">
+                <img src="" alt="" style="width: 80%; height: auto;">
+            </div>
+            <p>
+
+            </p>
+            <h2>Map Guide for Bakngeb River Cave in Tboli, South Cotabato Tourist Destination</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.014962375586!2d124.79853771477497!3d6.278238595458705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x324f660f4cd528e5%3A0xa296d24c7d0c4d88!2sBakngeb%20River%20Cave!5e0!3m2!1sen!2sph!4v1647279444097!5m2!1sen!2sph"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+
+
+        </article>
+    </main>
+    <div class="modal" id="myModal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <div id="caption" class="caption"></div>
+    </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.querySelectorAll('.divimg img');
+        var modalImg = document.getElementById("modalImg");
+        var captionText = document.getElementById("caption");
+        img.forEach(function (imgElement) {
+            imgElement.onclick = function () {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.nextElementSibling.innerHTML;
+            }
+        });
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+    </script>
+    <footer>
+        <p>&copy; 2024 Lakbay Marsita. All rights reserved.</p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/your-kit-id.js"></script>
+</body>
+
+</html>

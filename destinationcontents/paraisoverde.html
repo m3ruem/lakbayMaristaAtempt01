@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="shortcut icon" type="x-icon" href="imgs/lakbay3.png">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            background-color: #070707;
+            color: #fff;
+            padding: 0px;
+            text-align: center;
+            animation: fadeInDown 1s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            background-color: #555;
+            padding: 10px;
+            text-align: center;
+            animation: fadeInUp 1s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: #ddd;
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: color 0.3s ease, background-color 0.3s ease;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            color: #fff;
+            background-color: #777;
+        }
+
+        main {
+            padding: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        article {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 1s ease;
+        }
+
+        article h2 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        article img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        article p {
+            line-height: 1.6;
+            color: #555;
+        }
+
+        footer {
+            background-color: #080808;
+            color: #ddd;
+            padding: 20px;
+            text-align: center;
+            animation: fadeInUp 1s ease;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        @keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            max-width: 80%;
+            max-height: 80%;
+        }
+
+        .modal-img {
+            display: block;
+            max-width: 100%;
+            max-height: 100%;
+            margin: auto;
+        }
+
+        .close {
+            color: #fff;
+            position: absolute;
+            top: 10px;
+            right: 25px;
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <header>
+
+        <a class="navbar-brand" href="index.html">
+            <img src="/imgs/logoLM.png" alt="Bootstrap" width="150" height="150">
+        </a>
+
+    </header> -->
+
+    <nav>
+        <a href="/index.php"><i class="fas fa-home"></i> Home</a>
+
+
+    </nav>
+
+    <main>
+        <article>
+            <div class="divimg">
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/05/c2/0a/b5/paraiso-verde-resort.jpg?w=1000&h=-1&s=1"
+                    alt="">
+            </div>
+
+            <h2>Paraiso Verde Resort & Water Park
+            </h2>
+            <p>Paraiso Verde Resort & Water Park, a world-class tourist destination and the first of its kind in
+                Southern Philippines, offers a fusion of water, sun and fun in one modernized venue designed to fully
+                cater to the needs of both local and foreign guests.</p>
+            <p>Located in Koronadal City, South Cotabato.
+            </p>
+            <p>Its four main attractions consist of the Moby Wave Pool, the Adventura River Rapids, the Freestyle Swim
+                Pool, and the Wiggles Kiddie Pool. It also prides itself with a food court and a 300 person-capacity
+                pavilion. It leads in the industry by offering wholesome family leisure in the area.</p>
+            <div class="divimg">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh45gBuAVniLiTEa0QsxpU77dj5e6714wOsDODEBzGZ7htDpehw_14YIxPlI0Lg7noDOJtvjcnjqpH82oEPlQ1XTMDgos0eqBLTp8iVsvxEOV1Mh1QVa2tTVm6daEA7ylIBRrO6nWT65hA/s640/paraiso1.jpg"
+                    alt="">
+            </div>
+            <div class="divimg">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgySdhGaiXqHi1FC4Bemd9ZtzyK1XB5OERQFO2RZRn41sJJec0VGDqmtBHNhw1HVN2wwkpWbfkS09dnHdejUitg8MxqsyqHgaVrLg0BovqHjHoJ_tT0mOT70QVyrl_3JdEACqUgNCupyDA/s640/paraiso3.jpg"
+                    alt="">
+            </div>
+            <div class="divimg">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMmn_vwEOAHdQxhcEfB2X0n6DYqnah_CM3ggWyHBDgDCvcHgm1CTbUfzqAsBlAnqu47MlAIv5_BjqWebyzTuzo_CfTE56OEd_Pprxbk5XjsMx3Wecqb6w0iEJuSWzHrR3PbZlVXjls8FE/s640/paraiso4.jpg"
+                    alt="">
+            </div>
+            <div class="divimg">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjFIyWhcRWTsAgRnPKXnOB3gLFGJiLYsXpYCGssLj-M2tbXePsBXPyz5qWCpVCKtu81PU2bP3CyGqqLitLpE-DjyIMV68UOo1E23GC5m3eRFHNKjHC1aQEU25-C886bPDfglFwD8xvuU3M/s640/paraiso5.jpg"
+                    alt="">
+            </div>
+            <p>Paraiso Verde Resort and Water Park is open daily from 9 am – 6 pm/7 pm, except Tuesdays.
+            </p>
+
+
+            <div class="divimg">
+                <img src="" alt="" style="width: 50%; height: auto;">
+            </div>
+            <p>
+
+            </p>
+            <div class="divimg">
+                <img src="" alt="" style="width: 80%; height: auto;">
+            </div>
+            <p>
+
+            </p>
+            <h2>Map Guide for Paraiso Verde Resort & Water Park
+                Tourist Destination</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3934.4643616408947!2d121.1047724143362!3d14.174452190094979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd5ff33f26e5f7%3A0xf872f3c59b1ddfa2!2sParaiso%20Verde%20Resort%20%26%20Water%20Park!5e0!3m2!1sen!2sph!4v1649819009357!5m2!1sen!2sph"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+
+
+
+
+        </article>
+    </main>
+    <div class="modal" id="myModal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <div id="caption" class="caption"></div>
+    </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.querySelectorAll('.divimg img');
+        var modalImg = document.getElementById("modalImg");
+        var captionText = document.getElementById("caption");
+        img.forEach(function (imgElement) {
+            imgElement.onclick = function () {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.nextElementSibling.innerHTML;
+            }
+        });
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+    </script>
+    <footer>
+        <p>&copy; 2024 Lakbay Marsita. All rights reserved.</p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/your-kit-id.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+* {
+    box-sizing:border-box
+  }
+  .commentForm {
+    width: 100%;
+    color: #2a2e2e;
+    cursor: text;
+    resize: none;
+    display: block;
+    padding: 6px 0 6px 8px;
+    line-height: 1.4;
+    font-size: 18px;
+    transition: all .15s ease-in-out;
+    overflow: auto;
+    background: #fff;
+    border: 2px solid #dbdfe4;
+    border-radius: 4px 4px 0 0;
+    border-bottom: none;
+  }
+
+  .nameForm {
+    border-radius: 4px;
+    border: solid 2px #dbdfe4; 
+    position: absolute;
+    top: 0;
+    left: 65px;
+    right: 0;
+    width: 81%;
+  }
+
+  .commentFormSubmit {
+    border: none;
+    background: rgba(29,47,58,.6);
+    display: inline-block;
+    color: #fff;
+    line-height: 1.1;
+    transition: background .2s;
+    margin: -2px;
+    white-space: nowrap;
+    border-radius: 0 0 0 3px;
+    font-size: 12px;
+    padding: 12px 14px 13px;
+    font-weight: 700;
+  }
+  .commentFormSubmit:hover {
+    background: rgba(29,47,58,.7);
+    color: #fff;
+    cursor: pointer;
+    transition: linear .3s;
+  }
+  .pp {
+    border-radius: 5px;
+    width: 56px;
+  }
+  .form-outer {
+    width: 340px;
+    position: relative;
+  }
+  .commentSubmitOuter {
+    background: #f6f8f9;
+    border-radius: 0 0 4px 4px;
+    border: solid 2px #dbdfe4;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: opacity linear .2s;
+  }

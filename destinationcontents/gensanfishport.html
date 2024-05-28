@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="shortcut icon" type="x-icon" href="imgs/lakbay3.png">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            background-color: #070707;
+            color: #fff;
+            padding: 0px;
+            text-align: center;
+            animation: fadeInDown 1s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            background-color: #555;
+            padding: 10px;
+            text-align: center;
+            animation: fadeInUp 1s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: #ddd;
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: color 0.3s ease, background-color 0.3s ease;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            color: #fff;
+            background-color: #777;
+        }
+
+        main {
+            padding: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        article {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 1s ease;
+        }
+
+        article h2 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        article img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        article p {
+            line-height: 1.6;
+            color: #555;
+        }
+
+        footer {
+            background-color: #080808;
+            color: #ddd;
+            padding: 20px;
+            text-align: center;
+            animation: fadeInUp 1s ease;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        @keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            max-width: 80%;
+            max-height: 80%;
+        }
+
+        .modal-img {
+            display: block;
+            max-width: 100%;
+            max-height: 100%;
+            margin: auto;
+        }
+
+        .close {
+            color: #fff;
+            position: absolute;
+            top: 10px;
+            right: 25px;
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <header>
+
+        <a class="navbar-brand" href="index.html">
+            <img src="/imgs/logoLM.png" alt="Bootstrap" width="150" height="150">
+        </a>
+
+    </header> -->
+
+    <nav>
+        <a href="/index.php"><i class="fas fa-home"></i> Home</a>
+
+
+    </nav>
+
+    <main>
+        <article>
+            <div class="divimg">
+                <img src="https://7641islands.ph/wp-content/uploads/2022/06/Fish-Port_General-Santos-City-by-Ivan-Carlo-H.-Santillana-1-scaled.jpg"
+                    alt="">
+            </div>
+
+            <h2>GENERAL SANTOS CITY FISH PORT COMPLEX</h2>
+            <p>General Santos City, aptly nicknamed the "Tuna Capital of the Philippines," boasts a unique attraction
+                that captures the essence of its booming fishing industry - the General Santos City Fish Port Complex.
+                This bustling port offers a fascinating glimpse into the world of tuna fishing, processing, and trade
+            </p>
+            <p>Dubbed as the “Tuna Capital of the Philippines”, General Santos City claimed to be the largest producer
+                of sashimi-grade tuna in the country.
+            </p>
+            <div class="divimg">
+                <img src="https://www.benarnews.org/english/news/philippine/philippines-commercial-tuna-fishing-08122022180752.html/@@images/image/social_media"
+                    alt="">
+            </div>
+            <p>Upon arrival at the location, visitors are directed to the office where boots are available for rent at a
+                minimal cost of PHP 35.00. Appreciated the provision of plastic covers for the feet while using the
+                boots, although wearing socks would enhance the experience.
+
+            </p>
+            <p>Unlike the typical scenes of bustling fish ports, the General Santos City
+                Fish Port presented a stark contrast. It was clean, well-maintained, and orderly. Additionally, what
+                caught my attention during my visit were the amiable locals at the port who appeared to be exceptionally
+                welcoming to tourists.
+            </p>
+
+            <div class="divimg">
+                <img src="https://thehappytrip.com/wp-content/uploads/2016/12/15355813_10154142153988017_7437571903960955978_n.jpg"
+                    alt="">
+            </div>
+            <p>
+                The typical process of handling fish catches observed at the fish port began with the unloading of tuna
+                from the fishing boats. Each tuna was individually lifted and transported by a stevedore or
+                longshoreman. On occasion, the weight of the tuna being carried exceeded that of the person handling it.
+
+
+            </p>
+            <p>
+
+            </p>
+            <div class="divimg">
+                <img src="https://thehappytrip.com/wp-content/uploads/2016/12/gensan-2.jpg" alt="">
+            </div>
+            <p>The tuna of General Santos goes to any three major destinations after the grading process. Some go to the
+                tuna canneries, others to the processors/exporters, while the rest goes to the local market catering the
+                local consumers.</p>
+            <p>The tuna intended for export are cleaned immediately which includes the process of the removal of heads
+                and entrails; scrubbing which removes all the excess blood which can damage the meat while in transit.
+            </p>
+            <div class="divimg">
+                <img src="https://thehappytrip.com/wp-content/uploads/2016/12/cats-5.jpg" alt="">
+            </div>
+            <h2>THE GENERAL SANTOS CITY FISH PORT COMPLEX</h2>
+            <p>The General Santos City Fishport Complex is located in Barangay Tambler having a 750 meters (2,460 ft)
+                quay and a 300 meters (980 ft) wharf for 2,000 GT reefer carriers. The famed fish port comes with modern
+                facilities that adhere to international standards on handling fish catch.</p>
+            <p>Apart from unloading, the fish port serves as a venue for marketing of marine products both for local and
+                foreign markets. The fish port has Harbor operations including the maintenance and repair of fish
+                vessels; and has facilities for processing and refrigeration activities.</p>
+            <div class="divimg">
+                <img src="https://thehappytrip.com/wp-content/uploads/2016/12/15391000_10154142117468017_823645871514506768_n.jpg"
+                    alt="">
+            </div>
+
+
+
+            <p>
+                The General Santos City Fish Port draws numerous visitors on a daily basis. In 2014, it gained
+                recognition from the Guinness World Records for showcasing the largest display of yellowfin tuna.
+
+            </p>
+
+            <div class="divimg">
+                <img src="" alt="" style="width: 50%; height: auto;">
+            </div>
+            <p>
+
+            </p>
+            <div class="divimg">
+                <img src="" alt="" style="width: 80%; height: auto;">
+            </div>
+            <p>
+
+            </p>
+            <h2>Map Guide for GENERAL SANTOS CITY FISH PORT COMPLEX Tourist Destination</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.7030071830557!2d125.1564513142542!3d6.124442995541377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3230211a9b6fc261%3A0xe63e5124c94ecabe!2sGeneral%20Santos%20Fish%20Port%20Complex!5e0!3m2!1sen!2sph!4v1647277850681!5m2!1sen!2sph"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+
+
+
+
+        </article>
+    </main>
+    <div class="modal" id="myModal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <div id="caption" class="caption"></div>
+    </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.querySelectorAll('.divimg img');
+        var modalImg = document.getElementById("modalImg");
+        var captionText = document.getElementById("caption");
+        img.forEach(function (imgElement) {
+            imgElement.onclick = function () {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.nextElementSibling.innerHTML;
+            }
+        });
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+    </script>
+    <footer>
+        <p>&copy; 2024 Lakbay Marsita. All rights reserved.</p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/your-kit-id.js"></script>
+</body>
+
+</html>

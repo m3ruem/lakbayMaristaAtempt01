@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="shortcut icon" type="x-icon" href="imgs/lakbay3.png">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            background-color: #070707;
+            color: #fff;
+            padding: 0px;
+            text-align: center;
+            animation: fadeInDown 1s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            background-color: #555;
+            padding: 10px;
+            text-align: center;
+            animation: fadeInUp 1s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: #ddd;
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: color 0.3s ease, background-color 0.3s ease;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            color: #fff;
+            background-color: #777;
+        }
+
+        main {
+            padding: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        article {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 1s ease;
+        }
+
+        article h2 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        article img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        article p {
+            line-height: 1.6;
+            color: #555;
+        }
+
+        footer {
+            background-color: #080808;
+            color: #ddd;
+            padding: 20px;
+            text-align: center;
+            animation: fadeInUp 1s ease;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        @keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            max-width: 80%;
+            max-height: 80%;
+        }
+
+        .modal-img {
+            display: block;
+            max-width: 100%;
+            max-height: 100%;
+            margin: auto;
+        }
+
+        .close {
+            color: #fff;
+            position: absolute;
+            top: 10px;
+            right: 25px;
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <header>
+
+        <a class="navbar-brand" href="index.html">
+            <img src="/imgs/logoLM.png" alt="Bootstrap" width="150" height="150">
+        </a>
+
+    </header> -->
+
+    <nav>
+        <a href="/index.php"><i class="fas fa-home"></i> Home</a>
+
+
+    </nav>
+
+    <main>
+        <article>
+            <div class="divimg">
+                <img src="https://mindanews.com/wp-content/uploads/2021/07/31mosostrawberry33.jpg" alt="">
+            </div>
+
+            <h2>Foot of Mt. Matutum, a strawberry park beckons to tourists.</h2>
+            <p>Nestled at the foothills of the majestic Mt. Matutum, South Cotabato’s landmark peak towering at 2,286
+                meters, the strawberry park is surrounded by greenery and has a cool climate, especially towards dawn,
+                all-year round.</p>
+            <p>Located in Sitio Amgu-o, Barangay Landan, some 30 minutes away from the national highway, Moso Strawberry
+                Agritourism Park is the first strawberry farm in Polomolok but second in South Cotabato.
+            </p>
+            <div class="divimg">
+                <img src="https://mindanews.com/wp-content/uploads/2021/07/31mosostrawberry22.jpg" alt="">
+            </div>
+            <p>The Moso Strawberry Park has a vantage view of Mt. Matutum and the rolling hills surrounding the
+                mountain, declared by then President Fidel Ramos in 1995 as a protected landscape due to its diverse
+                flora and fauna as well as rare wildlife species.
+
+            </p>
+            <p>Besides the enchanting view of Mt. Matutum, the four-hectare Moso Strawberry Park’s main attraction is
+                allowing visitors to experience strawberry picking in their property where fruit trees such as durian,
+                banana, lanzones and rambutan are also grown.</p>
+
+            <div class="divimg">
+                <img src="https://mindanews.com/wp-content/uploads/2021/07/31mosostrawberry44.jpg" alt="">
+            </div>
+            <p>
+                It is best to wear thick clothes and bring your own jackets, and yes, tents for protection against the
+                cold night. The park has no accommodation facilities for now so visitors can bring their own tents or
+                rent from them.
+
+
+            </p>
+            <p>
+
+            </p>
+            <div class="divimg">
+                <img src="https://mindanews.com/wp-content/uploads/2021/07/31moso-strawberry11.jpg" alt="">
+            </div>
+            <p>For souvenir, the park sells strawberry seedlings at 60 pesos each, with Joan advising they should be grown in shaded areas in the lowlands. Visitors can also bring home the strawberries they picked, the amount depending on the number of grams.
+
+“We’re doing it one small step at a time. We started this venture and we hope to sustain it,” she said, expressing optimism the strawberry park can attract more visitors on better days. (Bong S. Sarmiento / MindaNews)</p>
+            <h2>Planning Your Visit to Mt. Matutum</h2>
+            <h3>Getting There</h3>
+            <p>
+                The Polomok Mt. Matutum Strawberry Park is open to visitors daily. The entrance fee is minimal, making
+                it an affordable and enjoyable destination for families and friends.
+            </p>
+
+
+
+            <p>
+                The best time to visit the strawberry park is during the harvest season, which typically runs from
+                November to April. However, it's always best to call ahead to confirm availability before your visit.
+                Wear comfortable clothing and shoes suitable for walking on uneven terrain.
+                Bring sun protection, especially if you're visiting during the midday sun.
+                If you plan on picking strawberries, bring a basket or container to collect your bounty.
+                Cash is the most commonly accepted mode of payment.
+            </p>
+
+            <div class="divimg">
+                <img src="" alt="" style="width: 50%; height: auto;">
+            </div>
+            <p>
+
+            </p>
+            <div class="divimg">
+                <img src="" alt="" style="width: 80%; height: auto;">
+            </div>
+            <p>
+
+            </p>
+            <h2>Map Guide for Mt. Matutum Tourist Destination</h2>
+            <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2563.107830796714!2d125.1487371159562!3d6.377399009229191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32381c8b4c0f3809%3A0x10b14f61a414bb9!2sMt.%20Matutum!5e0!3m2!1sen!2sph!4v1647277593908!5m2!1sen!2sph"
+    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+
+
+
+        </article>
+    </main>
+    <div class="modal" id="myModal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <div id="caption" class="caption"></div>
+    </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.querySelectorAll('.divimg img');
+        var modalImg = document.getElementById("modalImg");
+        var captionText = document.getElementById("caption");
+        img.forEach(function (imgElement) {
+            imgElement.onclick = function () {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.nextElementSibling.innerHTML;
+            }
+        });
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+    </script>
+    <footer>
+        <p>&copy; 2024 Lakbay Marsita. All rights reserved.</p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/your-kit-id.js"></script>
+</body>
+
+</html>

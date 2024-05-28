@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="shortcut icon" type="x-icon" href="imgs/lakbay3.png">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            background-color: #070707;
+            color: #fff;
+            padding: 0px;
+            text-align: center;
+            animation: fadeInDown 1s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            background-color: #555;
+            padding: 10px;
+            text-align: center;
+            animation: fadeInUp 1s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: #ddd;
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: color 0.3s ease, background-color 0.3s ease;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            color: #fff;
+            background-color: #777;
+        }
+
+        main {
+            padding: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        article {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 1s ease;
+        }
+
+        article h2 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        article img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        article p {
+            line-height: 1.6;
+            color: #555;
+        }
+
+        footer {
+            background-color: #080808;
+            color: #ddd;
+            padding: 20px;
+            text-align: center;
+            animation: fadeInUp 1s ease;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        @keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            max-width: 80%;
+            max-height: 80%;
+        }
+
+        .modal-img {
+            display: block;
+            max-width: 100%;
+            max-height: 100%;
+            margin: auto;
+        }
+
+        .close {
+            color: #fff;
+            position: absolute;
+            top: 10px;
+            right: 25px;
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <header>
+
+        <a class="navbar-brand" href="index.html">
+            <img src="/imgs/logoLM.png" alt="Bootstrap" width="150" height="150">
+        </a>
+
+    </header> -->
+
+    <nav>
+        <a href="/index.php"><i class="fas fa-home"></i> Home</a>
+
+
+    </nav>
+
+    <main>
+        <article>
+            <div class="divimg">
+                <img src="https://i0.wp.com/kapediaries.com/wp-content/uploads/2022/01/img20211212151142-1-copy.jpg?resize=748%2C499&ssl=1"
+                    alt="Divine Mercy">
+            </div>
+
+            <h2>SG Farm in Tupi</h2>
+            <p>SG Farm is located in Barangay Kablon, Tupi. From Grand Summit Hotel in General Santo City, it was
+                roughly around an hour and a half drive.</p>
+            <p>After paying the P100 entrance fee, you leisurely made your way around the wide farm.
+            </p>
+            <div class="divimg">
+                <img src="https://i0.wp.com/kapediaries.com/wp-content/uploads/2022/01/img20211212151544-3-copy.jpg?resize=748%2C499&ssl=1"
+                    alt="">
+            </div>
+            <p>
+                Strawberry Guyabano Farm – the name alone evokes an image of colorful fruits and verdant landscapes.
+                Located in Tupi, a charming town in the South Cotabato region of the Philippines, the farm is a
+                remarkable destination for food lovers, horticulturists, and agritourism enthusiasts.
+            </p>
+            <p>
+
+            </p>
+            <div class="divimg">
+                <img src="https://i0.wp.com/kapediaries.com/wp-content/uploads/2022/01/img20211212152349-7-copy.jpg"
+                    alt="">
+            </div>
+            <h2>Planning Your Visit to SG Farm</h2>
+            <h3>Getting There</h3>
+            <p>
+                SG Farm Tupi, officially known as Strawberry Guyabano Farm, is a serene oasis in Sitio Glandang,
+                Barangay Kablon, Tupi, South Cotabato.
+
+                The farm is a mere 7.5km from the National Highway, Crossing Kablon, and is easily navigable via Waze or
+                Google Maps. Just set your destination to “STRAWBERRY GUYABANO FARM” in South Cotabato.
+            </p>
+            <h3>Travel Time
+            </h3>
+            <p class="lk">
+                From General Santos City, it’s roughly an hour and a half drive to reach this tranquil haven. The roads
+                are mostly cemented, ensuring a smooth journey to your destination.
+            </p>
+            <h3>Operating Hours and Rates</h3>
+            <p>SG Farm is open daily from 6:00 AM to 8:00 PM. They offer a variety of options for both day tours and
+                overnight stays. Day visitors can enjoy the farm tour for a P100 entrance fee, which includes trekking
+                and a tour guide.</p>
+
+            <p>For overnight stays, there are several options ranging from tent spaces at P500 to the Badjang House for
+                P6000, suitable for 6 pax, including breakfast and entrance fees. Other accommodations include the Open
+                Kubo and two-person setups.</p>
+
+            <h2>Additional Tips for an Enchanting Experience
+            </h2>
+            <div class="divimg">
+                <img src="https://i0.wp.com/kapediaries.com/wp-content/uploads/2022/01/img20211212153016-11-copy.jpg" alt="">
+            </div>
+            <h3>Weather and Clothing</h3>
+            <p>The climate at SG Farm can be quite chilly, especially late in the afternoon and in the evening. I
+                recommend bringing a light jacket or cardigan to stay comfortable. Given that it’s a farm tourism site,
+                opt for comfortable footwear suitable for trekking and exploring the vast farm.</p>
+            <h3>Photography</h3>
+            <p>Don’t forget your camera! SG Farm offers breathtaking views of Mt. Matutum and a plethora of picturesque
+                spots for selfies, group photos, and even cool shots on swings and decks.</p>
+            <h3>Dining Options
+            </h3>
+            <p>The farmhouses have charming food and beverage outlets like the Civet Cafe, Rainforest Cafe, and Bayog
+                Bar. These establishments, primarily built with wood and bamboo, offer a range of options from Filipino
+                cuisine to light snacks and beverages.</p>
+            <h3>Accommodation and Amenities
+            </h3>
+            <p>If you’re planning an overnight stay, SG Farm provides various accommodations from modern huts with
+                colorful exteriors to more rustic options. Amenities include toiletries, towels, an electric kettle,
+                water, coffee, hot and cold showers, and charging outlets.</p>
+            <h3>Booking and Peak Seasons
+            </h3>
+            <p>It’s wise to book your accommodation in advance, especially during peak seasons. Keep in mind that the
+                farm can get crowded on weekends, so you might want to consider visiting on a weekday.
+
+            </p>
+            
+            <p>
+
+            </p>
+            <div class="divimg">
+                <img src="" alt="" style="width: 50%; height: auto;">
+            </div>
+            <p>
+
+            </p>
+            <div class="divimg">
+                <img src="" alt="" style="width: 80%; height: auto;">
+            </div>
+            <p>
+
+            </p>
+            <h2>Map Guide for SG Farm Tourist Destination</h2>
+<iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1246.4593936357855!2d125.04990786911322!3d6.329915481426124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32ed4416f1197a15%3A0xb0d24e8d6a44c38!2sSG%20Farm!5e0!3m2!1sen!2sph!4v1649660161487!5m2!1sen!2sph"
+    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+
+        </article>
+    </main>
+    <div class="modal" id="myModal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <div id="caption" class="caption"></div>
+    </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.querySelectorAll('.divimg img');
+        var modalImg = document.getElementById("modalImg");
+        var captionText = document.getElementById("caption");
+        img.forEach(function (imgElement) {
+            imgElement.onclick = function () {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.nextElementSibling.innerHTML;
+            }
+        });
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+    </script>
+    <footer>
+        <p>&copy; 2024 Lakbay Marsita. All rights reserved.</p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/your-kit-id.js"></script>
+</body>
+
+</html>

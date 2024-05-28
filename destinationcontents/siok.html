@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="shortcut icon" type="x-icon" href="imgs/lakbay3.png">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            background-color: #070707;
+            color: #fff;
+            padding: 0px;
+            text-align: center;
+            animation: fadeInDown 1s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            background-color: #555;
+            padding: 10px;
+            text-align: center;
+            animation: fadeInUp 1s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: #ddd;
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: color 0.3s ease, background-color 0.3s ease;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            color: #fff;
+            background-color: #777;
+        }
+
+        main {
+            padding: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        article {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 1s ease;
+        }
+
+        article h2 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        article img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        article p {
+            line-height: 1.6;
+            color: #555;
+        }
+
+        footer {
+            background-color: #080808;
+            color: #ddd;
+            padding: 20px;
+            text-align: center;
+            animation: fadeInUp 1s ease;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        @keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            max-width: 80%;
+            max-height: 80%;
+        }
+
+        .modal-img {
+            display: block;
+            max-width: 100%;
+            max-height: 100%;
+            margin: auto;
+        }
+
+        .close {
+            color: #fff;
+            position: absolute;
+            top: 10px;
+            right: 25px;
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <header>
+
+        <a class="navbar-brand" href="index.html">
+            <img src="/imgs/logoLM.png" alt="Bootstrap" width="150" height="150">
+        </a>
+
+    </header> -->
+
+    <nav>
+        <a href="/index.php"><i class="fas fa-home"></i> Home</a>
+
+
+    </nav>
+
+    <main>
+        <article>
+            <div class="divimg">
+                <img src="https://scontent-mnl1-1.xx.fbcdn.net/v/t1.6435-9/115893643_157971285892815_3228764432958935758_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeH28xildeMZtIchY2cfNzK7LFHpshG-WlgsUemyEb5aWBj-pW-d6hqF0kYRqhWK3p7EfSfGbJ2X4BTl3Z_wHRiP&_nc_ohc=uYSr-f457dkQ7kNvgGsb7Ek&_nc_ht=scontent-mnl1-1.xx&oh=00_AYAzatfVBH3GL8O_Hi8yQMl7B5fAXfyco5ebkgXC4Val9A&oe=66682F7C"
+                    alt="">
+            </div>
+
+            <h2>Siok Falls and River Trekking Adventure
+            </h2>
+            <p>The adventure begins with a scenic journey to Sitio Siok in Barangay Mabini, roughly 11 kilometers from
+                Koronadal City. Prepare for a moderate to challenging river trek, as the path involves navigating
+                through</p>
+            <h5>Rocky Terrain: Expect slippery rocks and uneven surfaces. Sturdy shoes with good grip are essential.
+            </h5>
+            <h5>River Currents: The water level can vary depending on the season. Be prepared for wading through shallow
+                waters or occasional deeper sections.</h5>
+            <h5>Breathtaking Scenery: Along the way, marvel at towering trees, lush vegetation, and the refreshing sound
+                of flowing water.</h5>
+            <h2>Reaching the Reward: Siok Falls</h2>
+            <p>After approximately two hours of trekking, your efforts will be rewarded with the sight of the majestic
+                Siok Falls. This 40-foot wonder cascades down a rocky cliff, creating a captivating natural pool at its
+                base. Take a refreshing dip in the cool water or simply soak in the breathtaking view.</p>
+
+
+            <div class="divimg">
+                <img src="https://scontent-mnl1-1.xx.fbcdn.net/v/t1.6435-9/116664056_157971302559480_8980204189905524155_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEBxJ0mADnVMRZIGW_KlYmBNKn-STv4ukw0qf5JO_i6TDDhr1liXZSvDSZJsX8lGXpZLpgpFNaV7hFSmI9uNCe0&_nc_ohc=sYhPCXAeubIQ7kNvgFC068O&_nc_ht=scontent-mnl1-1.xx&oh=00_AYDUP-0YOC8zg5G61BXlXq2w-E-JC8cTgmYoGxzSKVm50A&oe=666816D9"
+                    alt="">
+            </div>
+
+
+            <p>The river trekking adventure site was formally launched last Tuesday October 2, 2012 attended by city
+                officials and employees headed by Mayor Peter Miguel, the land owners in Sitio Siok (pronounced si-ohk),
+                members of the media and some nature enthusiasts and adventure tourists. Take a look at some of the
+                pictures as South Cotabato News joined the river trekking adventure and the launching of Siok Falls as
+                an eco-tourism site in the City of Koronadal.</p>
+            <div class="divimg">
+                <img src="https://scontent-mnl1-1.xx.fbcdn.net/v/t1.6435-9/116228803_157971362559474_2844224558371301863_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEh4u9NGv_CdCi7m5QW1RSfxjlBP4NGKcXGOUE_g0YpxYQjMpOWpNq7N-JTFDfPoz1ExJIP5lw13iGhgdH-soNI&_nc_ohc=yV_pJhWX3qcQ7kNvgEJqMsk&_nc_ht=scontent-mnl1-1.xx&oh=00_AYCO_Vu8NVNJ6TtBZPyQev6q4VFTD3HIm1U1ja5_RPGWig&oe=666815EE"
+                    alt="">
+            </div>
+            <h2>Planning Your Trip</h2>
+            <h5>Seasonality: The ideal time to visit is during the dry season (typically November to April) when the
+                water levels are lower and trekking conditions are more favorable.</h5>
+            <h5>Guides: Hiring a local guide familiar with the terrain is highly recommended. They can ensure your
+                safety, navigate the route, and provide insights into the local environment.
+            </h5>
+            <h5>Gear: Wear comfortable clothing and shoes suitable for hiking and getting wet. Bring a waterproof bag
+                for your belongings, a hat, sunscreen, and insect repellent. Don't forget a swimsuit and towel if you
+                plan on swimming in the falls.
+            </h5>
+
+            <div class="divimg">
+                <img src="https://scontent-mnl1-1.xx.fbcdn.net/v/t1.6435-9/116710986_157971219226155_1628542233013810667_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeF5Z7IWc_ofDyokeUFFIgaQqQXalXW1kFmpBdqVdbWQWUUGyodFfukeLULirtw-6a2CN0VuC69OmEXe20OVnSQ2&_nc_ohc=1Wi3elrck70Q7kNvgGQ1mrh&_nc_ht=scontent-mnl1-1.xx&oh=00_AYDueup7DOrDT9jWemWlSXfRPLXfxH9oUPJdFebjDJqYAQ&oe=66684212"
+                    alt="">
+            </div>
+
+            <h2>Responsible Adventure</h2>
+            <h5>Leave No Trace: Pack out all your trash and avoid littering to preserve the natural beauty of the area.
+            </h5>
+            <h5>Respect the Environment: Minimize noise pollution and avoid disturbing the wildlife.
+            </h5>
+            <h5>Be mindful of your safety: Always follow your guide's instructions and be aware of the surroundings.
+            </h5>
+
+            <div class="divimg">
+                <img src="" alt="" style="width: 50%; height: auto;">
+            </div>
+            <p>
+
+            </p>
+            <div class="divimg">
+                <img src="" alt="" style="width: 80%; height: auto;">
+            </div>
+            <p>
+
+            </p>
+            <h2>Map Guide for Siok Falls and River Trekking Adventure Tourist Destination</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.436165665016!2d125.0551383147723!3d6.462280124764334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3237a8c92011d9b7%3A0x2c267b764d5c8a02!2sSiok%20Falls!5e0!3m2!1sen!2sph!4v1647426976925!5m2!1sen!2sph"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+
+        </article>
+    </main>
+    <div class="modal" id="myModal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <div id="caption" class="caption"></div>
+    </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.querySelectorAll('.divimg img');
+        var modalImg = document.getElementById("modalImg");
+        var captionText = document.getElementById("caption");
+        img.forEach(function (imgElement) {
+            imgElement.onclick = function () {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.nextElementSibling.innerHTML;
+            }
+        });
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+    </script>
+    <footer>
+        <p>&copy; 2024 Lakbay Marsita. All rights reserved.</p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/your-kit-id.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lake Holon | LM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="shortcut icon" type="x-icon" href="imgs/lakbay3.png">
+</head>
+
+<body>
+    <header>
+
+        <a class="navbar-brand" href="index.html">
+            <img src="/imgs/logoLM.png" alt="Bootstrap" width="150" height="150">
+        </a>
+
+    </header>
+
+    <nav>
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="lakeholongallery.html"><i class="fas fa-image"></i> Gallery</a>
+
+    </nav>
+
+    <main>
+        <article>
+            <div class="divimg">
+                <img src="https://www.judethetourist.com/wp-content/uploads/2022/12/Photoghraphy-Lake-Holon-South-Cotabato-Jude-The-Tourist.jpg"
+                    alt="Divine Mercy">
+            </div>
+
+            <h2>A Journey to Lake Holon</h2>
+            <p>The journey to Lake Holon is an adventure in itself, as travelers traverse rugged terrain and winding
+                roads that lead deeper into the heart of nature. Surrounded by towering trees and cascading waterfalls,
+                the journey offers glimpses of the region's natural splendor, preparing visitors for the breathtaking
+                sights that await them at their destination.</p>
+            <p>As you arrive at Lake Holon, the first glimpse of its pristine waters takes your breath away. Nestled
+                amidst the towering peaks of the T'boli mountains, the lake shimmers like a jewel in the sunlight,
+                reflecting the beauty of the surrounding landscape. The air is crisp and clean, carrying the scent of
+                pine and earth, while the sound of birdsong fills the air, creating a symphony of nature's melody.
+            </p>
+            <div class="divimg">
+                <img src="https://www.judethetourist.com/wp-content/uploads/2022/12/lake-holon-south-cotabato-travel-guide-1024x683.png"
+                    alt="">
+            </div>
+            <p>
+                Lake Holon offers a wealth of opportunities for outdoor enthusiasts, from hiking and camping to swimming
+                and fishing. The surrounding forests are home to a diverse array of flora and fauna, with trails leading
+                to panoramic viewpoints and hidden waterfalls waiting to be discovered. Whether embarking on a trek to
+                the summit of Mount Melibengoy or simply lounging by the lakeshore, there's no shortage of adventures to
+                be had in this natural playground.
+            </p>
+            <p>
+
+            </p>
+            <div class="divimg">
+                <img src="https://steemitimages.com/640x0/https://cdn.steemitimages.com/DQmc1aGRYJtQPjfuzzuLWJ2WGcmNhDTm4xMgyoYAkaVb74E/20190525_061407.jpg"
+                    alt="">
+            </div>
+            <p>
+            Beyond its natural beauty, Lake Holon is also a place of cultural significance, home to the indigenous T'boli people who have inhabited this land for centuries. Visitors have the opportunity to immerse themselves in the rich tapestry of T'boli culture, from sampling traditional cuisine to learning about age-old customs and rituals. The warmth and hospitality of the local community add depth to the overall experience, inviting travelers to connect with the soul of the place.
+            </p>
+            <p class="lk">
+            Lake Holon is more than just a destination – it's a sanctuary for the soul, a place where nature's beauty unfolds in all its glory. Whether seeking adventure, relaxation, or spiritual renewal, visitors find solace amidst the tranquil landscapes and crystal-clear waters of this hidden gem. So come, embark on a journey of discovery, and experience the magic of Lake Holon for yourself.
+            </p>
+            <div class="divimg">
+                <img src="" alt="">
+            </div>
+            <p>
+
+            </p>
+            <div class="divimg">
+                <img src="" alt="" style="width: 50%; height: auto;">
+            </div>
+            <p>
+
+            </p>
+            <div class="divimg">
+                <img src="" alt="" style="width: 80%; height: auto;">
+            </div>
+            <p>
+
+            </p>
+            <h2>Map Guide for Lake Holon Tourist Destination</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2563.107830796714!2d124.8101811159562!3d6.309826409229191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32ed47b1c715b1c1%3A0x349269a8ec556bb4!2sLake%20Holon!5e0!3m2!1sen!2sph!4v1647277090364!5m2!1sen!2sph"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </article>
+    </main>
+    <div class="modal" id="myModal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <div id="caption" class="caption"></div>
+    </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.querySelectorAll('.divimg img');
+        var modalImg = document.getElementById("modalImg");
+        var captionText = document.getElementById("caption");
+        img.forEach(function (imgElement) {
+            imgElement.onclick = function () {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.nextElementSibling.innerHTML;
+            }
+        });
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+    </script>
+    <footer>
+        <p>&copy; 2024 Lakbay Marsita. All rights reserved.</p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/your-kit-id.js"></script>
+</body>
+
+</html>
